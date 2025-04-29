@@ -170,3 +170,4 @@ C:\Users\ignac\source\repos\AppDotacion\AppDotacion\obj\Debug\net8.0\AppDotacion
 C:\Users\ignac\source\repos\AppDotacion\AppDotacion\obj\Debug\net8.0\AppDotacion.genruntimeconfig.cache
 C:\Users\ignac\source\repos\AppDotacion\AppDotacion\obj\Debug\net8.0\ref\AppDotacion.dll
 C:\Users\ignac\source\repos\AppDotacion\AppDotacion\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\ignac\source\repos\AppDotacion\AppDotacion\obj\Debug\net8.0\AppDotacion.sourcelink.json

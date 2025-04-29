@@ -26,11 +26,8 @@ namespace AppDotacion.Models
         public byte? DV { get; set; } // tinyint en SQL, se mapea como byte
         public string? Clasifica_Cargo { get; set; } // nvarchar
         public string? CARGO { get; set; } // nvarchar
-
-        // Fecha de ingreso y fecha de baja como int, probablemente en formato yyyyMMdd
         public int? Fecha_Ingreso { get; set; } // int en SQL, se mapea como int
         public int? Fecha_Baja { get; set; } // int en SQL, se mapea como int
-
         public int? N_Personal { get; set; } // int en SQL
         public string? Correo { get; set; } // nvarchar
     }
