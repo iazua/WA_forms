@@ -26,37 +26,31 @@ namespace AppDotacion.Controllers
             // Obtener opciones únicas de cada columna desde la base de datos
             ViewData["Pais_Call_Center"] = await _context.Dotaciones
                 .Select(d => d.Pais_Call_Center)
-                .Where(d => d != null)
                 .Distinct()
                 .ToListAsync();
 
             ViewData["Area"] = await _context.Dotaciones
                 .Select(d => d.Area)
-                .Where(d => d != null)
                 .Distinct()
                 .ToListAsync();
 
             ViewData["AreaGestion"] = await _context.Dotaciones
                 .Select(d => d.AreaGestion)
-                .Where(d => d != null)
                 .Distinct()
                 .ToListAsync();
 
             ViewData["Contrato"] = await _context.Dotaciones
                 .Select(d => d.Contrato.ToString())
-                .Where(d => d != null)
                 .Distinct()
                 .ToListAsync();
 
             ViewData["Tipos_de_agente"] = await _context.Dotaciones
                 .Select(d => d.Tipos_de_agente)
-                .Where(d => d != null)
                 .Distinct()
                 .ToListAsync();
 
             ViewData["Servicio"] = await _context.Dotaciones
                 .Select(d => d.Servicio)
-                .Where(d => d != null)
                 .Distinct()
                 .ToListAsync();
 
