@@ -1,0 +1,101 @@
+﻿@model AppDotacion.Models.Dotacion
+
+@{
+    ViewData["Title"] = "Crear Dotación";
+}
+
+<h2>Crear Dotación</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Rut_DNI"></label>
+        <input asp-for="Rut_DNI" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Agente"></label>
+        <input asp-for="Agente" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Pais_Call_Center"></label>
+        <select asp-for="Pais_Call_Center" class="form-control">
+            <option value="Chile">Chile</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Peru">Perú</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Area"></label>
+        <select asp-for="Area" class="form-control">
+            <option value="Ventas">Ventas</option>
+            <option value="Soporte">Soporte</option>
+            <option value="Administración">Administración</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="AreaGestion"></label>
+        <input asp-for="AreaGestion" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Contrato"></label>
+        <input asp-for="Contrato" type="number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Tipos_de_agente"></label>
+        <select asp-for="Tipos_de_agente" class="form-control">
+            <option value="Interno">Interno</option>
+            <option value="Externo">Externo</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Servicio"></label>
+        <input asp-for="Servicio" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Usuarios_RcWeb"></label>
+        <input asp-for="Usuarios_RcWeb" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Nombre_Jefatura"></label>
+        <input asp-for="Nombre_Jefatura" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Rut_Ficticio"></label>
+        <input asp-for="Rut_Ficticio" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Rut_DNI2"></label>
+        <input asp-for="Rut_DNI2" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="DV"></label>
+        <input asp-for="DV" type="number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Clasifica_Cargo"></label>
+        <select asp-for="Clasifica_Cargo" class="form-control">
+            <option value="Operativo">Operativo</option>
+            <option value="Administrativo">Administrativo</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="CARGO"></label>
+        <input asp-for="CARGO" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Fecha_Ingreso"></label>
+        <input asp-for="Fecha_Ingreso" type="date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Fecha_Baja"></label>
+        <input asp-for="Fecha_Baja" type="date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="N_Personal"></label>
+        <input asp-for="N_Personal" type="number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Correo"></label>
+        <input asp-for="Correo" type="email" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

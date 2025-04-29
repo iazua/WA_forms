@@ -1,0 +1,65 @@
+﻿@model IEnumerable<AppDotacion.Models.Dotacion>
+
+@{
+    ViewData["Title"] = "Dotaciones";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().ID)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Rut_DNI)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Agente)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Pais_Call_Center)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Nombre_Call_Center)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Area)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().AreaGestion)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Contrato)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Tipos_de_agente)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Servicio)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Usuarios_RcWeb)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Nombre_Jefatura)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Rut_Ficticio)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Rut_DNI2)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().DV)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Clasifica_Cargo)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().CARGO)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Fecha_Ingreso)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Fecha_Baja)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().N_Personal)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Correo)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Rut_DNI</td>
+                <td>@item.Agente</td>
+                <td>@item.Pais_Call_Center</td>
+                <td>@item.Nombre_Call_Center</td>
+                <td>@item.Area</td>
+                <td>@item.AreaGestion</td>
+                <td>@item.Contrato</td>
+                <td>@item.Tipos_de_agente</td>
+                <td>@item.Servicio</td>
+                <td>@item.Usuarios_RcWeb</td>
+                <td>@item.Nombre_Jefatura</td>
+                <td>@item.Rut_Ficticio</td>
+                <td>@item.Rut_DNI2</td>
+                <td>@item.DV</td>
+                <td>@item.Clasifica_Cargo</td>
+                <td>@item.CARGO</td>
+                <td>@item.Fecha_Ingreso</td>
+                <td>@item.Fecha_Baja</td>
+                <td>@item.N_Personal</td>
+                <td>@item.Correo</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-success">Crear Nueva Dotación</a>
